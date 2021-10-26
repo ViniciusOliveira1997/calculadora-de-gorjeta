@@ -1,2 +1,2 @@
 # calculadora-de-gorjeta
-Site criado a partir do mini curso do onebitcode
+Site criado a partir do curso eduzz fullstack developer
