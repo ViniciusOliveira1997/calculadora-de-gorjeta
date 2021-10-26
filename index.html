@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link rel="stylesheet" href="styles.css">
+    <title>Calculadora de gorjetas</title>
+</head>
+<body>
+    <div id="container">
+  <div>
+      <H1 class="title">Calculadora de gorjetas</H1>
+  </div>  
+  <div>
+      <form class="tipsForm" id="tipsForm">
+          <label for = "Bill">
+            <p>Quanto ficou a conta?</p>  
+          </label>
+          <p>
+              R$<input type="number" placeholder="100" name="Bill" id="Bill" class="formInput" required>
+          </p>
+          <label for = "serviceQuality">
+              <p>Como foi seu serviço?</p>
+          </label>
+          <p>
+              <select name="serviceQuality" id="serviceQuality" class="formSelect" required>
+                  <Option disabled selected>--Escolha uma opção</Option>
+                  <Option value="0.3">30% = Incrivel</Option>
+                  <Option value="0.2">20% = Bom</Option>
+                  <Option value="0.15">15% = Aceitavel</Option>
+                  <Option value="0.1">10% = Ruim</Option>
+                  <Option value="0.05">05% = Pessimo</Option>
+              </select>
+          </p>
+          <label for="people">
+              <p>Quantas pessoas vão dividir a conta?</p>
+          </label>
+          <p>
+              <input type="number" placeholder="1" name ="people" id="people" class="formInput" required> pessoa(s)
+          </p>
+          <button type="submit" class="formSubmit">Calcular!</button>
+      </form>
+  </div>
+  <div id="totalTip">
+      Gorjeta total:
+      R$<span id="tip">0.00</span>
+      <span id="each">cada</span>
+  </div>
+</div>
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
